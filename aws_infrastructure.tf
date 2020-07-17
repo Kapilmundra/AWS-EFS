@@ -109,7 +109,7 @@ provisioner "remote-exec" {
       "sudo mount  ${aws_efs_file_system.allow_nfs.dns_name}:/  /var/www/html",
       "sudo echo ${aws_efs_file_system.allow_nfs.dns_name}:/ /var/www/html efs defaults,_netdev 0 0 >> sudo /etc/fstab",
       "sudo rm -rf /var/www/html/*",
-      "sudo git clone https://github.com/Kapilmundra/DeployCode-AWSCloud.git /var/www/html/"
+      "sudo git clone https://github.com/Kapilmundra/AWS-EFS.git /var/www/html/"
     ]
   }
 }
